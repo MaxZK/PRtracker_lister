@@ -230,7 +230,7 @@ error_reporting(0);
 <div id="page-wrap" class="" ng-init="loadContents()">
 	<div class="leftstuffstay"> <div class="leftstuffstayin">
 		<div class="row-fluid" style="float: left; margin-top: 20px;">
-			<img src=" https://forum.bluedrake42.com/uploads/monthly_2017_02/freecandyvan.png.1336f08dd08e654753b56847eede037f.png" style="margin-top: -7px;" width="60" height="60" alt="Computer Hope logo normal">
+			<img src="<?php echo $config[logo]['logoURL']; ?>" style="margin-top: -7px;" width="60" height="60" alt="Computer Hope logo normal">
 		</div>
 		<div style="position: absolute; left: 100px; top: 13px;">
 			<div> <b><?php echo $config[$srvID]['serverName']; ?></b>
@@ -240,18 +240,18 @@ error_reporting(0);
 				$idx = 1;
 				while($idx <= $totalSrv){
 					if ($idx == $configID){
-						echo '<li><a class="btn btn-sm btn-active" href="#"><b>FCV #'.$idx.'</b></a></li>';
+						echo '<li><a class="btn btn-sm btn-active" href="#"><b>'.$config[$idx]['btnName'].'</b></a></li>';
 					}
 					else {
-						echo '<li><a  class="btn btn-sm btn-info" href="?srv='.$idx.'"><b>FCV #'.$idx.'</b></a></li>';
+						echo '<li><a  class="btn btn-sm btn-info" href="?srv='.$idx.'"><b>'.$config[$idx]['btnName'].'</b></a></li>';
 					}
 					$idx++;
 				}
 				
 				
 				?>
-					<li><a class="btn btn-sm btn-info" target="_blank" href="https://forum.bluedrake42.com/index.php?/gc/1-project-reality/"><b>Forums</b></a></li>
-					<li><a class="btn btn-sm btn-info" target="_blank" href="https://discord.gg/tat4W8R"><b>Discord</b></a></li>
+					<li><a class="btn btn-sm btn-info" target="_blank" href="<?php echo $config[site]['URL']; ?>"><b><?php echo $config[site]['btnName']; ?></b></a></li>
+					<li><a class="btn btn-sm btn-info" target="_blank" href="<?php echo $config[voice]['URL']; ?>"><b><?php echo $config[voice]['btnName']; ?></b></a></li>
 				</ul>
 			</div>
 		</div>
