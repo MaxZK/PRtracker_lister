@@ -6,7 +6,7 @@ This is a website tool to display more information about a round quickly.
 * Ties Battle Recorder and Tracker files together. (There is a slight rare chance of having a mismatch between a file)
 * Search Maps, Layer, Game mode.
 * Quickly shows Tickets and winners.
-* Display server time. (More info about how)
+* Display server time. (More info about how to deal with it bellow)
 
 ## Exemple
 * [Free Candy Van](http://pr.bluedrake42.com/pr/1/tracker/?srv=1)
