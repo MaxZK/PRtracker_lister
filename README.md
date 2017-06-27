@@ -16,11 +16,12 @@ This is a website tool to display more information about a round quickly.
 * Ability to search players that participated in a round.
 * Total score of squads and teams in the summary display.
 * Make the server time less shit to deal with.
+* Add pagination and sorting.
 
 ## Some issues
 * Tool is made on a old version of PHP, so you might have some issue with the arrays.
-* If you don't want a site/voice button you need to manually remove the line 253 and/or 254.
-* Can't easily edit the server time, go to line 263 to 265. I use this site to make the clock: [timeanddate.com](https://www.timeanddate.com/clocks/free.html)
+* If you don't want a site and/or voice button you need to manually remove the line 253 and/or 254 in index.php
+* Can't easily edit the server time, go to line 263 to 265 in index.php. I use this site to make the clock: [timeanddate.com](https://www.timeanddate.com/clocks/free.html)
 
 ## Stuff
 If you have questions about this tool ask [R-DEV]Max_

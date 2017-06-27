@@ -230,7 +230,7 @@ error_reporting(0);
 <div id="page-wrap" class="" ng-init="loadContents()">
 	<div class="leftstuffstay"> <div class="leftstuffstayin">
 		<div class="row-fluid" style="float: left; margin-top: 20px;">
-			<img src="<?php echo $config[logo]['logoURL']; ?>" style="margin-top: -7px;" width="60" height="60" alt="Computer Hope logo normal">
+			<img src="<?php echo $config[logoURL]; ?>" style="margin-top: -7px;" width="60" height="60" alt="Computer Hope logo normal">
 		</div>
 		<div style="position: absolute; left: 100px; top: 13px;">
 			<div> <b><?php echo $config[$srvID]['serverName']; ?></b>
@@ -261,7 +261,7 @@ error_reporting(0);
 					<input id="search" class="form-control form-lg" placeholder="Search">
 				</div>
 				<div style="font-family: Arial; position: fixed; top: 0; left: 0; float: right; width: 250px; margin-top: 9px; margin-left: 60%; pointer-events: none;"><b>Server Time:</b>
-					<iframe src="http://free.timeanddate.com/clock/i5kdm9ml/n137/fn2/fcfff/tc161414/pcfff161414fff/ahl/tt0/tw1/th1/ta1/tb2" frameborder="0" width="250" height="20" allowTransparency="true"></iframe>
+					<iframe src="<?php echo $config[srvTime];?>" frameborder="0" width="250" height="20" allowTransparency="true"></iframe>
 				</div>
 			</div>
 		</div>
@@ -297,7 +297,7 @@ error_reporting(0);
                          }?>
                          <td class="smalltext" style="width: 232px;"><ul class="nav nav-pills">
                            <li><?php echo $item['demo']?></li>
-                           <li><a class="btn btn-sm btn-info" target="_blank" href="../../viewer.v3/index.html?demo=../1/tracker/<?php echo $item['view']?>"><b>Tracker</b></a></li>
+                           <li><a class="btn btn-sm btn-info" target="_blank" href="<?php echo $config[$srvID]['viewURL'].$item['view']; ?>"><b>Tracker</b></a></li>
                            <?php
 						 if ($item['Team2Name'] == "") {
 							echo '<li><button class="btn btn-sm btn-blocked"><b>Summary</b></button></li>';
@@ -308,6 +308,7 @@ error_reporting(0);
                          </ul></td>
                     </tr>
                     <?php endforeach; ?>
+					<tfoot><td colspan="5"><span style="color: #999999; font-size: 9px; margin-top: -9px; text-align: center;">[R-CON]AlonTavor and [R-DEV]Max_</span></td></tfoot>
                 </tbody></table>
         </div>
 
