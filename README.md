@@ -14,7 +14,7 @@ This is a website tool to display more information about a round quickly.
 
 ## To Do
 * Ability to search players that participated in a round.
-* Total score a squad in the summary display.
+* Total score of squads and teams in the summary display.
 * Make the server time less shit to deal with.
 
 ## Some issues
