@@ -1,9 +1,9 @@
-<?php 
+<?php
 # Total number of servers to generate server buttons
 $config[totalSrv] = 2;
 # Specific server configs
 # if you have one server then remove config[2]
-# if you more than 2 server then copy line 16 to 24 and paste it bellow
+# if you more than 2 server then copy line 17 to 25 then paste it bellow and change the config number to 3
 # make sure that the ids are set correctly with path and name.
 $config[1] = array(
 	'id' => 1,
